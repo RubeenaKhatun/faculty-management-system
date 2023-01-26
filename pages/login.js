@@ -1,6 +1,10 @@
 import React from "react";
+import { demoResume } from "../lib/data";
+import Link from "next/link";
 
 const login = () => {
+  const resume = demoResume();
+
   return (
     <div>
       <img
@@ -22,7 +26,9 @@ const login = () => {
                 className="border-2 border-black absolute right-60 p-2 rounded-md"
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Type your email"
+                required
               ></input>
             </div>
             <div className="my-6 ml-0">
@@ -33,11 +39,16 @@ const login = () => {
                 className="border-2 border-black absolute right-60 p-2 rounded-md"
                 type="password"
                 name="password"
+                id="password"
                 placeholder="Type your password"
+                required
               ></input>
             </div>
-            <button className="border-2 border-black px-7 hover:bg-green-600 py-2 mt-6  rounded-xl bg-green-500 ml-80">
-              <a href="/home">LOGIN</a>
+            <button
+              // onClick={authenticate()}
+              className="border-2 border-black px-7 hover:bg-green-600 py-2 mt-6  rounded-xl bg-green-500 ml-80"
+            >
+              <Link href="/home">LOGIN</Link>
             </button>
           </form>
         </div>

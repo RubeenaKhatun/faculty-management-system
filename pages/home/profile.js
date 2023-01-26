@@ -78,7 +78,7 @@ const index = () => {
                       </h1>
                       <div>
                         <i className="bx bxs-user"></i>
-                        <span class="text-4xl font-semibold ">
+                        <span class="text-xl font-semibold ">
                           {resume.personal.firstName} {resume.personal.lastName}
                         </span>
                       </div>
@@ -166,7 +166,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className="col-span-2 p-6">
-                  <h1 className="text-indigo-700 text-4xl font-">
+                  <h1 className="text-indigo-700 text-5xl font-semibold">
                     {resume.personal.firstName} {resume.personal.lastName}
                   </h1>
                   <div>

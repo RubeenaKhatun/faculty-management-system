@@ -66,11 +66,13 @@ const index = () => {
           <div className="bg-slate-200 m-3">
             <div className="grid grid-cols-2 gap-8 p-14">
               {resume.skills.map((item) => (
-                <div className="p-20 bg-red-300 h-60">
-                  <h1 className="text-2xl font-bold relative m-0.5">
-                    {item.name}
-                  </h1>
-                </div>
+                <a href="">
+                  <div className="p-20 bg-red-300 h-60">
+                    <h1 className="text-2xl font-bold relative m-0.5">
+                      {item.name}
+                    </h1>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
